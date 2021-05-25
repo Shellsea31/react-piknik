@@ -1,6 +1,9 @@
 const express = require("express");
 const PORT = process.env.PORT || 8080;
 const app = express();
+require("./models/mongoConnection")
+
+
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
